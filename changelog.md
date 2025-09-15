@@ -15,11 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Placeholder for bug/security fixes.
 ### Removed
 - Placeholder for removed/unused code or assets.
-
 ---
 
-## [1.1.0] - 2025-09-15
+## [1.2.0] - 2025-09-15
 ### Added
+- Post cards dynamically loaded using JSON file.
 - Added `posts.json` and `posts.js` to dynamically load cards.
 
 ---
@@ -27,13 +27,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 ## [1.1.0] - 2025-09-5
 ### Added
 - Header and footer dynamically loaded across the site using JavaScript fetch.
+- Added components `header.html` and `footer.html`
+- Added custom domain to Netlify.
 
 ### Changed
 - Edited navbar CSS slightly for better look on mobile view.
-- Added custom domain to Netlify.
 
 ### Fixed
-- Broken "Read more" links in `index.html` and `posts.html`.
+- Fixed broken "Read more" links in `index.html` and `posts.html`.
 
 ---
 
