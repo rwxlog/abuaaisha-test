@@ -88,6 +88,11 @@ html,body{
 /* main */
 .main{ padding:28px 0; }
 
+/* Section header */
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.section-head h2{margin:0}
+.view-all{color:var(--accent);text-decoration:none;font-weight:600;display:inline-block;margin-top:12px;}
+
 /* grid for homepage */
 .post-grid{
   display:grid;
