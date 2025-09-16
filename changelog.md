@@ -23,6 +23,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Post cards dynamically loaded using JSON file.
 - Added `posts.json` and `posts.js` to dynamically load cards.
 
+### Fixed
+- Header position fixed.
+
 ### Removed
 - Removed Kalpurush font.
 
