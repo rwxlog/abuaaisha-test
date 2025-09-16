@@ -1,13 +1,3 @@
-/* css/style.css */
-/* Theme: off-white site with Kalpurush font (self-host or replace with another Bengali webfont) */
-@font-face {
-  font-family: 'Kalpurush';
-  src: url('../fonts/Kalpurush.ttf') format('truetype'); /* Place Kalpurush.ttf in /fonts/ or adjust path */
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root{
   --bg:#fbfaf8; /* off-white */
   --text:#1d1d1f;
@@ -23,7 +13,7 @@ html,body{
   margin:0;
   background:var(--bg);
   color:var(--text);
-  font-family: "Kalpurush", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   line-height:1.6;
