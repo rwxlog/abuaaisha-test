@@ -1,0 +1,62 @@
+{{ define "main" }}
+<main class="container main">
+
+  <!-- Faith section -->
+  <section class="home-section">
+    <div class="section-head">
+      <h2>Faith</h2>
+      <a class="view-all" href="{{ "categories/faith" | relURL }}">View all →</a>
+    </div>
+    
+    <div class="post-grid" id="faith-posts">
+      {{ range first 3 (where .Site.RegularPages "Params.categories" "intersect" (slice "faith")) }}
+      <article class="card">
+        <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+        <p class="excerpt">{{ .Summary }}</p>
+        <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Social section -->
+  <section class="home-section">
+    <div class="section-head">
+      <h2>Social</h2>
+      <a class="view-all" href="{{ "categories/social" | relURL }}">View all →</a>
+    </div>
+    
+    <div class="post-grid" id="social-posts">
+      {{ range first 3 (where .Site.RegularPages "Params.categories" "intersect" (slice "social")) }}
+      <article class="card">
+        <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+        <p class="excerpt">{{ .Summary }}</p>
+        <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Worldview section -->
+  <section class="home-section">
+    <div class="section-head">
+      <h2>Worldview</h2>
+      <a class="view-all" href="{{ "categories/worldview" | relURL }}">View all →</a>
+    </div>
+    
+    <div class="post-grid" id="worldview-posts">
+      {{ range first 3 (where .Site.RegularPages "Params.categories" "intersect" (slice "worldview")) }}
+      <article class="card">
+        <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+        <p class="excerpt">{{ .Summary }}</p>
+        <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+</main>
+{{ end }}

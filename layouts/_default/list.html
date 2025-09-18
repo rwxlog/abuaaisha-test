@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main class="container main">
+
+  <section class="post-list">
+    {{ range .Pages }}
+    <article class="post-excerpt">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+      <p>{{ .Summary }}</p>
+      <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
+    </article>
+    {{ end }}
+
+    <!-- Pagination -->
+    {{ if .Paginator }}
+    <nav class="pagination">
+      {{ if .Paginator.HasPrev }}
+        <a class="prev" href="{{ .Paginator.Prev.URL }}">← Previous</a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+        <a class="next" href="{{ .Paginator.Next.URL }}">Next →</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+  </section>
+
+</main>
+{{ end }}

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="container main single-post">
+  <article>
+    <h1>{{ .Title }}</h1>
+    <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
+    <div class="content">
+      {{ .Content }}
+    </div>
+
+    <!-- Navigation -->
+    <nav class="post-nav">
+      {{ with .Prev }}
+      <a class="prev" href="{{ .RelPermalink }}">← Previous</a>
+      {{ end }}
+      <a class="home" href="{{ "/posts/" | relURL }}">All posts</a>
+      {{ with .Next }}
+      <a class="next" href="{{ .RelPermalink }}">Next →</a>
+      {{ end }}
+    </nav>
+
+    <p><a href="#top" class="back-to-top">Back to top</a></p>
+  </article>
+</main>
+{{ end }}
