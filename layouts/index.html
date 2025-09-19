@@ -13,7 +13,7 @@
       <article class="card">
         <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
-        <p class="excerpt">{{ .Summary }}</p>
+        <p class="excerpt">{{ .Params.short_summary }}</p>
         <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
       </article>
       {{ end }}
@@ -32,7 +32,7 @@
       <article class="card">
         <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
-        <p class="excerpt">{{ .Summary }}</p>
+        <p class="excerpt">{{ .Params.short_summary }}</p>
         <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
       </article>
       {{ end }}
@@ -51,7 +51,7 @@
       <article class="card">
         <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="meta">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</p>
-        <p class="excerpt">{{ .Summary }}</p>
+        <p class="excerpt">{{ .Params.short_summary }}</p>
         <a class="read-more" href="{{ .RelPermalink }}">Read more →</a>
       </article>
       {{ end }}
