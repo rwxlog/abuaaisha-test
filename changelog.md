@@ -20,6 +20,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Placeholder for removed/unused code or assets.
 ---
 
+## [1.3.1] - 2025-09-19  
+### Added  
+- Support for short and long summaries:  
+  - Short summaries for homepage grid cards.  
+  - Longer summaries for posts listing page.  
+
+### Fixed  
+- Post category filtering and sorting to ensure newest posts are displayed first.  
+
+## [1.3.0] - 2025-09-18  
+### Changed  
+- Converted project to Hugo for improved SEO and content management.  
+
+### Added  
+- Local Hugo configuration.  
+- Netlify deployment with Hugo. 
+
 ## [1.2.0] - 2025-09-15
 ### Added
 - Post cards dynamically loaded using JSON file.
