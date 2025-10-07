@@ -109,12 +109,15 @@ html,body{
   box-shadow:0 18px 36px rgba(20,20,20,0.08);
 }
 .card-title{ margin:0 0 8px 0; font-size:1.05rem; }
+.card-title a { text-decoration: none;}
 .meta{ color:var(--muted); font-size:0.9rem; margin:0 0 10px 0; }
 .excerpt{ flex:1; margin-bottom:12px; color:var(--muted); }
 .read-more{ text-decoration:none; font-weight:600; }
 
 /* posts list */
 .post-list{ display:flex; flex-direction:column; gap:22px; }
+.post-list a {text-decoration: none;}
+.post-list a:hover {text-decoration: underline;}
 .post-excerpt{ background:var(--card); padding:18px; border-radius:10px; box-shadow:0 6px 12px rgba(0,0,0,0.03); }
 
 /* single post */
