@@ -78,7 +78,7 @@ html,body{
 }
 
 /* main */
-.main{ padding:25px 0; margin-top: 60px;}
+.main{ padding:25px; margin-top: 60px;}
 .home-section { padding:20px 0;}
 
 /* Section header */
@@ -121,6 +121,7 @@ html,body{
 .post-excerpt{ background:var(--card); padding:18px; border-radius:10px; box-shadow:0 6px 12px rgba(0,0,0,0.03); }
 
 /* single post */
+.single-post {padding: 1px 100px;}
 .single-post article{ background:var(--card); padding:24px; border-radius:10px; box-shadow:0 6px 12px rgba(0,0,0,0.03); }
 
 /* post nav */
