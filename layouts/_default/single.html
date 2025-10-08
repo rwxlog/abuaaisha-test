@@ -6,6 +6,8 @@
     <div class="content">
       {{ .Content }}
     </div>
+    
+    {{ partial "share-button.html" . }}
 
     <!-- Navigation -->
     <nav class="post-nav">
@@ -17,6 +19,8 @@
       <a class="next" href="{{ .RelPermalink }}">Next →</a>
       {{ end }}
     </nav>
+
+
 
     <p><a href="#top" class="back-to-top">Back to top</a></p>
   </article>
