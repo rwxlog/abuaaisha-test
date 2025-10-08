@@ -1,6 +1,6 @@
 baseURL = 'https://abuaaisha-test.netlify.app/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Abu Aaisha'
 
 [taxonomies]
   category = "categories"
